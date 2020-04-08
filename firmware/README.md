@@ -2,6 +2,6 @@ minimal set of firmware files for cave
 
 - [x] microcode
 - [ ] wifi
-- [ ] bluetooth
+- [x] bluetooth
 - [ ] gpu
 - [x] sound

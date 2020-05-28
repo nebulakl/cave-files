@@ -1,1 +1,0 @@
-vbutil_kernel --pack zen.img --keyblock devkeys/kernel.keyblock --signprivate devkeys/kernel_data_key.vbprivk --bootloader boot --config cmdline --arch x86 --vmlinuz 

@@ -1,0 +1,25 @@
+# Maintainer: Honpan Lung <lunghonpan@gmail.com>
+pkgname=chromebook-update-kernel
+pkgdesc='A helper script to update ChromeOS device kernel partition'
+pkgver=1
+pkgrel=1
+arch=('any')
+url=''
+license=('GPL')
+depends=('vboot-utils' 'linux-chromebook')
+install=chromebook-update-kernel.install
+source=(
+  "update-kernel-partition.sh"
+  "100-update-kernel-partition.hook"
+  "update-kernel-partition.sh"
+)
+sha256sums=(
+  'SKIP'
+  'SKIP'
+  'SKIP'
+)
+
+package() {
+  cd "${srcdir}"
+  install -v -D -m755 "update-kernel-partition.sh" "${pkgdir}/usr/bin/update-kernel-partition.sh"
+}

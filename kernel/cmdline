@@ -1,1 +1,0 @@
-root=/dev/mmcblk1p2 rw rootwait intel_idle.max_cstate=7 tpm_tis.interrupts=0 add_efi_memmap noresume noinitrd i915.modeset=1 i915.enable_guc=3 init=/lib/systemd/systemd

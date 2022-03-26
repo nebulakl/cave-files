@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Upgrade
+Target = linux-chromebook-cave
+
+[Action]
+Description = Updating kernel partition...
+When = PostTransaction
+Exec = /usr/bin/update-kernel-partition.sh

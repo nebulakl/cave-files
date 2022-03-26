@@ -1,3 +1,15 @@
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
 
-recovery/*.bin
-*.gz
+pkg/
+src/
+
+*.old
